@@ -11,7 +11,7 @@ let package = Package(
   ],
   dependencies: [],
   targets: [
-    .target(name: "Hired"),
+    .target(name: "Hired", resources: [.copy("Content.json")]),
     .testTarget(
       name: "HiredTests", 
       dependencies: ["Hired"]
