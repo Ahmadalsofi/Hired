@@ -1,5 +1,5 @@
 //
-//  HiredManager.swift
+//  ContentManager.swift
 //  Hired
 //
 //  Created by Zeeshan Khan on 17/08/2020.
@@ -8,12 +8,10 @@
 
 import Foundation
 
-public class HiredManager {
-    public init() {
-        
-    }
+public class ContentManager {
+    public init() {}
     
-    public func getAllTopics() -> Data? {
+    public var data: Data? {
         guard let url = Bundle.module.url(forResource: "Content", withExtension: "json") else {
             return nil
         }
