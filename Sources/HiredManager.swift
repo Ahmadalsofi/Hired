@@ -12,4 +12,11 @@ public class HiredManager {
     public init() {
         
     }
+    
+    public func getAllTopics() -> Data? {
+        guard let url = Bundle.module.url(forResource: "Content", withExtension: "json") else {
+            return nil
+        }
+        return try? Data(contentsOf: url)
+    }
 }

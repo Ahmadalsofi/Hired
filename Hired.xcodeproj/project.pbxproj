@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D05D983824EA36620066B58B /* Content.json in Resources */ = {isa = PBXBuildFile; fileRef = D05D983724EA36620066B58B /* Content.json */; };
+		D05D983A24EA3FB10066B58B /* Bundle+Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05D983924EA3FB10066B58B /* Bundle+Module.swift */; };
 		D0FFA03024EA33300097C161 /* Hired.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FFA02624EA33300097C161 /* Hired.framework */; };
 		D0FFA03524EA33300097C161 /* HiredTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FFA03424EA33300097C161 /* HiredTests.swift */; };
 		D0FFA04124EA335C0097C161 /* HiredManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FFA04024EA335C0097C161 /* HiredManager.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D05D983724EA36620066B58B /* Content.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Content.json; sourceTree = "<group>"; };
+		D05D983924EA3FB10066B58B /* Bundle+Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Module.swift"; sourceTree = "<group>"; };
 		D0FFA02624EA33300097C161 /* Hired.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hired.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0FFA02A24EA33300097C161 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0FFA02F24EA33300097C161 /* HiredTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HiredTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,8 +75,10 @@
 		D0FFA02824EA33300097C161 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				D05D983724EA36620066B58B /* Content.json */,
 				D0FFA02A24EA33300097C161 /* Info.plist */,
 				D0FFA04024EA335C0097C161 /* HiredManager.swift */,
+				D05D983924EA3FB10066B58B /* Bundle+Module.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -178,6 +184,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D05D983824EA36620066B58B /* Content.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0FFA04124EA335C0097C161 /* HiredManager.swift in Sources */,
+				D05D983A24EA3FB10066B58B /* Bundle+Module.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
