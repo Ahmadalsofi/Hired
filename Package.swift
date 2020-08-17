@@ -2,7 +2,6 @@
 
 import PackageDescription
 
-// 3
 let package = Package(
   name: "Hired",
   platforms: [.iOS(.v13), .macOS(.v10_14)],
