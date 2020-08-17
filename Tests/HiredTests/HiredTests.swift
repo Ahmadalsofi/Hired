@@ -20,8 +20,9 @@ class HiredTests: XCTestCase {
     }
 
     func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        if let data = ContentManager().data {
+            print("data bytes found: \(data.count)")
+        }
     }
 
     func testPerformanceExample() throws {

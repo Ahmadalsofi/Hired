@@ -7,11 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D05D983824EA36620066B58B /* Content.json in Resources */ = {isa = PBXBuildFile; fileRef = D05D983724EA36620066B58B /* Content.json */; };
-		D05D983A24EA3FB10066B58B /* Bundle+Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05D983924EA3FB10066B58B /* Bundle+Module.swift */; };
+		D001238724EA619F004C0FCD /* ContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D001238524EA619F004C0FCD /* ContentManager.swift */; };
 		D0FFA03024EA33300097C161 /* Hired.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FFA02624EA33300097C161 /* Hired.framework */; };
-		D0FFA03524EA33300097C161 /* HiredTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FFA03424EA33300097C161 /* HiredTests.swift */; };
-		D0FFA04124EA335C0097C161 /* HiredManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FFA04024EA335C0097C161 /* HiredManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,14 +22,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D05D983724EA36620066B58B /* Content.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Content.json; sourceTree = "<group>"; };
-		D05D983924EA3FB10066B58B /* Bundle+Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Module.swift"; sourceTree = "<group>"; };
+		D001238524EA619F004C0FCD /* ContentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentManager.swift; sourceTree = "<group>"; };
+		D056A4C124EA6496008D770C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0FFA02624EA33300097C161 /* Hired.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hired.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0FFA02A24EA33300097C161 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0FFA02F24EA33300097C161 /* HiredTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HiredTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0FFA03424EA33300097C161 /* HiredTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiredTests.swift; sourceTree = "<group>"; };
 		D0FFA03624EA33300097C161 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D0FFA04024EA335C0097C161 /* HiredManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiredManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +48,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D001238324EA619F004C0FCD /* Hired */ = {
+			isa = PBXGroup;
+			children = (
+				D001238524EA619F004C0FCD /* ContentManager.swift */,
+			);
+			path = Hired;
+			sourceTree = "<group>";
+		};
 		D0FFA01C24EA332F0097C161 = {
 			isa = PBXGroup;
 			children = (
@@ -75,10 +77,8 @@
 		D0FFA02824EA33300097C161 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				D05D983724EA36620066B58B /* Content.json */,
-				D0FFA02A24EA33300097C161 /* Info.plist */,
-				D0FFA04024EA335C0097C161 /* HiredManager.swift */,
-				D05D983924EA3FB10066B58B /* Bundle+Module.swift */,
+				D001238324EA619F004C0FCD /* Hired */,
+				D056A4C124EA6496008D770C /* Info.plist */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -86,7 +86,6 @@
 		D0FFA03324EA33300097C161 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				D0FFA03424EA33300097C161 /* HiredTests.swift */,
 				D0FFA03624EA33300097C161 /* Info.plist */,
 			);
 			path = Tests;
@@ -184,7 +183,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D05D983824EA36620066B58B /* Content.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,8 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0FFA04124EA335C0097C161 /* HiredManager.swift in Sources */,
-				D05D983A24EA3FB10066B58B /* Bundle+Module.swift in Sources */,
+				D001238724EA619F004C0FCD /* ContentManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +208,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0FFA03524EA33300097C161 /* HiredTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,7 +352,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Hired/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -382,7 +378,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Hired/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
