@@ -16,11 +16,14 @@ class HiredTests: XCTestCase {
     /// Put setup code here.
     /// This method is called before the invocation of each test method in the class.
     override func setUpWithError() throws {
-        let data = ContentManager().data
-        XCTAssert(data != nil, "JSON Data is nil")
-        XCTAssert(data!.count > 0, "JSON Data is empty")
+        
+        let url = Bundle.testBundle.url(forResource: "Content", withExtension: "json")
+        XCTAssert(url != nil, "JSON file URL is nil")
+        
+        let data = try! Data(contentsOf: url!)
+        XCTAssert(data.count > 0, "JSON Data is empty")
 
-        content = try JSONDecoder().decode(Content.self, from: data!)
+        content = try JSONDecoder().decode(Content.self, from: data)
     }
 
     /// Put teardown code here.
@@ -55,6 +58,14 @@ class HiredTests: XCTestCase {
             XCTAssert(topic.questions.count >= 1, "Topic should have questions \(topic.questions.count)")
         }
     }
+}
+
+private extension Bundle {
+    private final class BundleToken {}
+    static let testBundle: Bundle = {
+        let baseBundle = Bundle(for: BundleToken.self)
+        return Bundle(path: baseBundle.bundlePath + "/../Hired_Hired.bundle")!
+    }()
 }
 
 private struct Content: Decodable {
