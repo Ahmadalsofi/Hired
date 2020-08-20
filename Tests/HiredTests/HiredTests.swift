@@ -58,6 +58,24 @@ class HiredTests: XCTestCase {
             XCTAssert(topic.questions.count >= 1, "Topic should have questions \(topic.questions.count)")
         }
     }
+    
+    func testQuestionIDLength() {
+        content.iOS.forEach { topic in
+            topic.questions.forEach { question in
+                XCTAssert(question.id.count == 36, "Question ID length is wrong \(question.id.count), expected 36")
+            }
+        }
+    }
+
+    func testQuestionTextLength() {
+        content.iOS.forEach { topic in
+            topic.questions.forEach { question in
+                XCTAssert(question.question.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty == false, "Question is empty \(question.question)")
+                XCTAssert(question.question.count >= 3, "Question text count is less than 3 \(question.question)")
+            }
+        }
+    }
+
 }
 
 private extension Bundle {
