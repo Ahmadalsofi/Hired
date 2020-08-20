@@ -11,25 +11,58 @@ import XCTest
 
 class HiredTests: XCTestCase {
 
+    fileprivate var content: Content!
+    
+    /// Put setup code here.
+    /// This method is called before the invocation of each test method in the class.
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        let data = ContentManager().data
+        XCTAssert(data != nil, "JSON Data is nil")
+        XCTAssert(data!.count > 0, "JSON Data is empty")
+
+        content = try JSONDecoder().decode(Content.self, from: data!)
     }
 
+    /// Put teardown code here.
+    /// This method is called after the invocation of each test method in the class.
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        if let data = ContentManager().data {
-            print("data bytes found: \(data.count)")
+    func testParsing_iOS() {
+        XCTAssert(content.iOS.count == 15, "Topic count is wrong \(content.iOS.count), expected 14")
+    }
+
+    func testTopicID() {
+        let topicUniqueIds = Set(content.iOS.map(\.id))
+        XCTAssert(topicUniqueIds.count == content.iOS.count, "Topic ID should be unique")
+    }
+
+    func testTopicIDLength() {
+        content.iOS.forEach { topic in
+            XCTAssert(topic.id.count == 36, "Topic ID length is wrong \(topic.id.count), expected 36")
         }
     }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testTopicNameLength() {
+        content.iOS.forEach { topic in
+            XCTAssert(topic.topic.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty == false, "Topic name is empty \(topic.topic)")
+            XCTAssert(topic.topic.count >= 3, "Topic name count is less than 3 \(topic.topic)")
         }
     }
 
+}
+
+private struct Content: Decodable {
+    let iOS: [Topic]
+}
+
+private struct Topic: Decodable {
+    let id: String
+    let topic: String
+    let questions: [Question]
+}
+
+private struct Question: Decodable {
+    let id: String
+    let question: String
 }
