@@ -50,6 +50,11 @@ class HiredTests: XCTestCase {
         }
     }
 
+    func testTopicWithQuestion() {
+        content.iOS.forEach { topic in
+            XCTAssert(topic.questions.count == 1, "Topic should have questions \(topic.questions.count)")
+        }
+    }
 }
 
 private struct Content: Decodable {
