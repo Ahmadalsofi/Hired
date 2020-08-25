@@ -12,7 +12,8 @@ let package = Package(
   targets: [
     .target(name: "Hired",
             resources: [
-                .process("Resources/Content.json")
+                .process("Resources/Content.json"),
+                .process("Resources/Checklist.json")
             ]),
     .testTarget(
       name: "HiredTests", 
