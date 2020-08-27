@@ -23,33 +23,28 @@ class HiredTests: XCTestCase {
         let data = try! Data(contentsOf: url!)
         XCTAssert(data.count > 0, "JSON Data is empty")
 
-        content = try JSONDecoder().decode(Content.self, from: data)
+        let parsedContent = try? JSONDecoder().decode(Content.self, from: data)
+        XCTAssert(parsedContent != nil, "Failed to parse")
+        content = parsedContent
     }
 
     /// Put teardown code here.
     /// This method is called after the invocation of each test method in the class.
-    override func tearDownWithError() throws {
-    }
+    override func tearDownWithError() throws {}
 
     func testParsing_iOS() {
-        XCTAssert(content.iOS.count == 15, "Topic count is wrong \(content.iOS.count), expected 14")
+        XCTAssert(content.iOS.count == 15, "Topic count is wrong \(content.iOS.count), expected 15")
     }
 
-    func testTopicID() {
-        let topicUniqueIds = Set(content.iOS.map(\.id))
-        XCTAssert(topicUniqueIds.count == content.iOS.count, "Topic ID should be unique")
-    }
-
-    func testTopicIDLength() {
-        content.iOS.forEach { topic in
-            XCTAssert(topic.id.count == 36, "Topic ID length is wrong \(topic.id.count), expected 36")
-        }
+    func testTopicUniqueName() {
+        let topicUniqueNames = Set(content.iOS.map { $0.title })
+        XCTAssert(topicUniqueNames.count == content.iOS.count, "Topic name should be unique \(topicUniqueNames.count)")
     }
 
     func testTopicNameLength() {
         content.iOS.forEach { topic in
-            XCTAssert(topic.topic.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty == false, "Topic name is empty \(topic.topic)")
-            XCTAssert(topic.topic.count >= 3, "Topic name count is less than 3 \(topic.topic)")
+            XCTAssert(topic.title.isEmpty == false, "Topic name is empty \(topic.topic)")
+            XCTAssert(topic.title.count >= 3, "Topic name count is less than 3 \(topic.topic)")
         }
     }
 
@@ -58,20 +53,20 @@ class HiredTests: XCTestCase {
             XCTAssert(topic.questions.count >= 1, "Topic should have questions \(topic.questions.count)")
         }
     }
-    
-    func testQuestionIDLength() {
+
+    func testQuestionUnique() {
         content.iOS.forEach { topic in
-            topic.questions.forEach { question in
-                XCTAssert(question.id.count == 36, "Question ID length is wrong \(question.id.count), expected 36")
-            }
+            let questionsUniqueness = Set(topic.questions.map { $0.lowercased().trimmingCharacters(in: .whitespacesAndNewlines) })
+            XCTAssert(questionsUniqueness.count == topic.questions.count, "Questions text should be unique \(questionsUniqueness.count) expected \(topic.questions.count)")
         }
     }
 
     func testQuestionTextLength() {
         content.iOS.forEach { topic in
             topic.questions.forEach { question in
-                XCTAssert(question.question.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty == false, "Question is empty \(question.question)")
-                XCTAssert(question.question.count >= 3, "Question text count is less than 3 \(question.question)")
+                let text = question.trimmingCharacters(in: .whitespacesAndNewlines)
+                XCTAssert(text.isEmpty == false, "Question is empty \(question)")
+                XCTAssert(text.count >= 3, "Question text count is less than 3 \(question)")
             }
         }
     }
@@ -91,12 +86,9 @@ private struct Content: Decodable {
 }
 
 private struct Topic: Decodable {
-    let id: String
     let topic: String
-    let questions: [Question]
-}
-
-private struct Question: Decodable {
-    let id: String
-    let question: String
+    let questions: [String]
+    var title: String {
+        topic.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
+    }
 }
