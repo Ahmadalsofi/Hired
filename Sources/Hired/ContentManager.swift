@@ -12,7 +12,7 @@ public class ContentManager {
     public init() {}
     
     public var data: Data? {
-        guard let url = Bundle.module.url(forResource: "Content", withExtension: "json") else {
+        guard let url = Bundle.module.url(forResource: "iOS", withExtension: "json") else {
             return nil
         }
         return try? Data(contentsOf: url)
