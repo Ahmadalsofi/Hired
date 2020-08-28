@@ -1,0 +1,70 @@
+[
+    {
+        "topic": "Android",
+        "questions": [
+            "What is the android manifest?",
+            "What is the gradle build system?",
+            "What are activities and fragments?",
+            "What is the app lifecycle?",
+            "What are configuration changes and when do they happen?"
+        ]
+    },
+    {
+        "topic": "Design",
+        "questions": [
+            "What is material design?",
+            "What are quality guidelines?",
+            "How do you manage resources for different screen sizes?",
+            "What are layouts in android?",
+            "What is a recyclerView?",
+            "What is recyclerView adapter?",
+            "What kind of layouts can you have for recyclerViews?",
+            "What are support libraries?",
+            "What is an intent?",
+            "What is localization? how do you do it in android?",
+            "What is android jetpack?",
+            "What are android architecture components?",
+            "What is Data Binding?",
+            "What is View Binding?",
+            "What is LiveData?",
+            "What is Room?",
+            "What is ViewModel?",
+            "What is the Navigation Component?"
+        ]
+    },
+    {
+        "topic": "Kotlin",
+        "questions": [
+            "What are Coroutines?",
+            "What are Companion Objects?",
+            "How and when do you use Nullables in Kotlin?",
+            "How do you do Type Checking in Kotlin?",
+            "How do you Declare Switch Statements in Kotlin?",
+            "What is a Lambda Expression?",
+            "When is the Keyword it used in Lambda Expressions?",
+            "What is a Class Extension?",
+            "What are Ranges in Kotlin?"
+        ]
+    },
+    {
+        "topic": "Object-Oriented Programming",
+        "questions": [
+            "What is Polymorphism?",
+            "What is the Difference Between a Class and an Object?",
+            "What are Data Classes?",
+            "What is Encapsulation?",
+            "What are Visibility Modifiers?"
+        ]
+    },
+    {
+        "topic": "Testing",
+        "questions": [
+            "Where do you Organize your Tests in Android?",
+            "What are Unit Tests? How do you do them in android?",
+            "Instrumentation Tests",
+            "UI Tests"
+        ]
+    }
+]
+
+
