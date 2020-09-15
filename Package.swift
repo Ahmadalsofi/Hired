@@ -13,6 +13,7 @@ let package = Package(
     .target(name: "Hired",
             resources: [
                 .process("Resources/iOS.json"),
+                .process("Resources/iOS_ID.json"),
                 .process("Resources/Android.json"),
                 .process("Resources/iOS_Checklist.json")
             ]),
