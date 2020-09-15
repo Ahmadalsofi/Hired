@@ -10,7 +10,7 @@ import Foundation
 
 public class ContentManager {
     public init() {}
-    
+
     public var data: Data? {
         guard let url = Bundle.module.url(forResource: "iOS", withExtension: "json") else {
             return nil

@@ -28,13 +28,13 @@ struct Topic: Decodable {
     let topic: String
     let id: UUID
     let questions: [Question]
-    
+
     private enum CodingKeys: String, CodingKey {
         case topic
         case id
         case questions
     }
-    
+
     public init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         topic = try values.decode(String.self, forKey: .topic)
@@ -45,14 +45,14 @@ struct Topic: Decodable {
             print("id is nil \(topic)")
             id = UUID()
         }
-        
+
         if let list = try? values.decode(Array<Question>.self, forKey: .questions) {
             questions = list
         } else {
             questions = []
         }
     }
-    
+
     var toAny: Dictionary<String, Any> {
         [
             "topic": topic,
@@ -65,12 +65,12 @@ struct Topic: Decodable {
 struct Question: Decodable {
     let text: String
     let id: UUID
-    
+
     private enum CodingKeys: String, CodingKey {
         case text
         case id
     }
-    
+
     public init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         text = try values.decode(String.self, forKey: .text)
@@ -82,7 +82,7 @@ struct Question: Decodable {
             id = UUID()
         }
     }
-    
+
     var toAny: Dictionary<String, String> {
         [
             "text": text,

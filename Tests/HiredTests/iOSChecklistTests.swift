@@ -4,14 +4,14 @@ import XCTest
 class iOSChecklistTests: XCTestCase {
 
     fileprivate var content: [Checklist]!
-    
+
     /// Put setup code here.
     /// This method is called before the invocation of each test method in the class.
     override func setUpWithError() throws {
-        
+
         let url = Bundle.testBundle.url(forResource: "iOS_Checklist", withExtension: "json")
         XCTAssert(url != nil, "JSON file URL is nil")
-        
+
         let data = try! Data(contentsOf: url!)
         XCTAssert(data.count > 0, "JSON Data is empty")
 
@@ -40,7 +40,7 @@ class iOSChecklistTests: XCTestCase {
             XCTAssert(checklist.list.count >= 1, "Checklist should have items \(checklist.list.count)")
         }
     }
-    
+
     func testItemTextLength() {
         content.forEach { checklist in
             checklist.list.forEach { item in

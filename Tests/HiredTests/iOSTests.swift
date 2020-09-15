@@ -4,14 +4,14 @@ import XCTest
 class iOSHiredTests: XCTestCase {
 
     fileprivate var content: [Topic]!
-    
+
     /// Put setup code here.
     /// This method is called before the invocation of each test method in the class.
     override func setUpWithError() throws {
-        
+
         let url = Bundle.testBundle.url(forResource: "iOS", withExtension: "json")
         XCTAssert(url != nil, "JSON file URL is nil")
-        
+
         let data = try! Data(contentsOf: url!)
         XCTAssert(data.count > 0, "JSON Data is empty")
 
