@@ -1,258 +1,816 @@
 [
     {
+        "id": "113A9721-58EC-41D2-9809-8B7E05C132B0",
         "topic": "General",
         "questions": [
-            "Was candidate late for the interview? Any valid reason was given?",
-            "How do you update your self?",
-            "Do you write any technical blog?",
-            "What are the blogs do you regularly read?",
-            "What did you learn recently? Could summaries in a few sentences?",
-            "What are the common iOS development mistakes happen?",
-            "Do you follow WWDC changes?",
-            "What did you like in current WWDC from new APIs point of view?",
-            "Any changes you want to see in any framework in next WWDC?"
+            {
+                "question": "Was candidate late for the interview? Any valid reason was given?",
+                "id": "39F54741-EDB8-4332-B47E-1D0A2D2EE66B"
+            },
+            {
+                "question": "How do you update your self?",
+                "id": "F6487EB1-02BD-4CDD-B935-800604169F57"
+            },
+            {
+                "question": "Do you write any technical blog?",
+                "id": "6A952203-230C-4CE8-B116-5C7B21D44DAA"
+            },
+            {
+                "question": "What are the blogs do you regularly read?",
+                "id": "34B72264-1C1B-4A4D-8320-BE74CBEAD4CC"
+            },
+            {
+                "question": "What did you learn recently? Could summaries in a few sentences?",
+                "id": "DE38FF2E-739F-403B-AF5D-8851A1602ED5"
+            },
+            {
+                "question": "What are the common iOS development mistakes happen?",
+                "id": "BE6623DA-2D88-4C40-8210-FF3446521FD7"
+            },
+            {
+                "question": "Do you follow WWDC changes?",
+                "id": "53513080-F3C3-4C05-9106-A9751F6E6539"
+            },
+            {
+                "question": "What did you like in current WWDC from new APIs point of view?",
+                "id": "8526E706-CF22-4196-87DC-63542AFAC595"
+            },
+            {
+                "question": "Any changes you want to see in any framework in next WWDC?",
+                "id": "0B33A3DB-6884-4BAD-A4F7-168AF2EBC0EA"
+            }
         ]
     },
     {
-        "topic": "Xcode, Instruments",
+        "topic": "Xcode & Instruments",
+        "id": "F1ED712B-ED11-4821-99A9-4DCBC598F74C",
         "questions": [
-            "What is a TestPlan in Xcode?",
-            "Which Xcode version are you using in your day to day work?",
-            "Any particular new feature do you like?",
-            "What are the launch arguments in Xcode?",
-            "What are the difference between Version number and Build number?",
-            "What are the environment variables in Xcode?",
-            "How do we use environment variables and which API provides it?",
-            "Can we use environment variables in tests?",
-            "What are the Predefined Environment Variables?",
-            "Have you worked with NSZombieEnabled, NSDeallocateZombies, MallocGuardEdges?",
-            "How would you run an iOS app in other languages without changing the iPhone language or making any dummy code changes?",
-            "What is a Thread Sanitizer?",
-            "What is SwiftLint and how could we use it?",
-            "Have you heard about SwiftFormatter?",
-            "What is a `.p12` file?",
-            "Where do we include iPhone device id to run the app on a device?",
-            "What is `info.plist` file and what type of objects a property list supports?",
-            "How often do you use Instruments?",
-            "What is an entitlement file? When and why do we use it?"
+            {
+                "id": "39396C47-CDEE-4A9D-9C0A-33F290DF0985",
+                "question": "What is a TestPlan in Xcode?"
+            },
+            {
+                "id": "BE00DDC9-E132-4EDA-9D26-742BAFF0E95D",
+                "question": "Which Xcode version are you using in your day to day work?"
+            },
+            {
+                "id": "5DE0D6B9-3925-4D3C-8220-310D9A3988C4",
+                "question": "Any particular new feature do you like?"
+            },
+            {
+                "id": "51C89E22-0758-47FA-8CE6-757F669FB1A6",
+                "question": "What are the launch arguments in Xcode?"
+            },
+            {
+                "id": "614D562C-FCCD-4877-89A8-914DBD7411F8",
+                "question": "What are the difference between Version number and Build number?"
+            },
+            {
+                "id": "8F9D0A4E-4A4C-4A50-9249-CFD6CD213EE2",
+                "question": "What are the environment variables in Xcode?"
+            },
+            {
+                "id": "A970A76C-E548-46F5-9C53-65F9F89C9615",
+                "question": "How do we use environment variables and which API provides it?"
+            },
+            {
+                "id": "6B921F58-0AB0-464A-B96E-0C5C10C753B6",
+                "question": "Can we use environment variables in tests?"
+            },
+            {
+                "id": "80A34694-FB7E-42D7-BCD8-1E972FD84073",
+                "question": "What are the Predefined Environment Variables?"
+            },
+            {
+                "id": "F19EC20A-D565-454F-80BA-004023CD99BA",
+                "question": "Have you worked with NSZombieEnabled, NSDeallocateZombies, MallocGuardEdges?"
+            },
+            {
+                "id": "D205BF3C-1D80-4492-AC2F-7A0CEB9E3960",
+                "question": "How would you run an iOS app in other languages without changing the iPhone language or making any dummy code changes?"
+            },
+            {
+                "id": "7E6C87D1-2620-4629-8C96-6ADA01B3769D",
+                "question": "What is a Thread Sanitizer?"
+            },
+            {
+                "id": "C24D7BAA-DE14-4812-A454-629990BE8898",
+                "question": "What is SwiftLint and how could we use it?"
+            },
+            {
+                "id": "C1381520-9196-4493-B97C-EA36ED5872A1",
+                "question": "Have you heard about SwiftFormatter?"
+            },
+            {
+                "id": "7BABFC8E-CC2E-424C-B11B-B055B36ED648",
+                "question": "What is a `.p12` file?"
+            },
+            {
+                "id": "BC843DDC-CBA1-484A-87B8-90A13059CBCF",
+                "question": "Where do we include iPhone device id to run the app on a device?"
+            },
+            {
+                "id": "521B31D4-04BE-441B-9AF7-E7D5F5C25B12",
+                "question": "What is `info.plist` file and what type of objects a property list supports?"
+            },
+            {
+                "id": "DCC73A9B-CED7-4CB9-A7AF-AC0CC71E2730",
+                "question": "How often do you use Instruments?"
+            },
+            {
+                "id": "DF24C8A8-7A76-4334-9760-E99869F00231",
+                "question": "What is an entitlement file? When and why do we use it?"
+            }
         ]
     },
     {
         "topic": "Dependency Manager",
+        "id": "0AC97C99-8FAD-41BF-96E2-1E0D6B422B7F",
         "questions": [
-            "What is the difference between a Podfile and a podspec file?",
-            "In which language podfile is written?",
-            "What is the basic difference between Cocoapods and Carthage?",
-            "Have you worked with Swift Package Manager?",
-            "How do we add resources in Swift Package Manager?",
-            "What is Cocoapod registry?",
-            "What is a Gemfile?"
+            {
+                "id": "9546C1E2-92C7-4DD8-B65C-931B27E9C7C1",
+                "question": "What is the difference between a Podfile and a podspec file?"
+            },
+            {
+                "id": "019ECBE0-DCDB-498E-A04A-9E7D8BAB8BA6",
+                "question": "In which language Podfile is written?"
+            },
+            {
+                "id": "41107FAB-9195-4553-AD35-9DC5419A1370",
+                "question": "What is the basic difference between Cocoapods and Carthage?"
+            },
+            {
+                "id": "9935A0AE-8788-4479-8BED-0A4DE8A71F3D",
+                "question": "Have you worked with Swift Package Manager?"
+            },
+            {
+                "id": "A1D2EBCC-AFE0-43B5-A259-050A8B712AFA",
+                "question": "How do we add resources in Swift Package Manager?"
+            },
+            {
+                "id": "11BF9A03-618A-4A04-B14D-571077B4BA78",
+                "question": "What is Cocoapod registry?"
+            },
+            {
+                "id": "9ECE60C7-53F8-4E09-B452-0AD3C1304F90",
+                "question": "What is a Gemfile?"
+            }
         ]
     },
     {
         "topic": "Version Control",
+        "id": "82751745-120A-4DBE-9F22-73C689A5B744",
         "questions": [
-            "What allows you to combine your commits? What does rebase do?",
-            "Which does git stash do?",
-            "What is a Trunk Based development?",
-            "What is the difference between rebasing and merging in git?",
-            "What is a Monorepo?",
-            "What is a Submodule?",
-            "What is an Artifactory?"
+            {
+                "id": "B87FAEE0-75CA-43D2-96B2-AD7F024B36D4",
+                "question": "What allows you to combine your commits? What does rebase do?"
+            },
+            {
+                "id": "4140EC8C-EC1A-4E27-9B61-C5CB02436022",
+                "question": "Which does git stash do?"
+            },
+            {
+                "id": "E0CB0869-DC75-42E2-9D84-2A0A2FBAE83A",
+                "question": "What is a Trunk Based development?"
+            },
+            {
+                "id": "403DFA7F-2032-4849-AFF5-C6357CCA1D46",
+                "question": "What is the difference between rebasing and merging in git?"
+            },
+            {
+                "id": "146FABE3-746D-4BE3-B61C-88D4FF4038AC",
+                "question": "What is a Monorepo?"
+            },
+            {
+                "id": "E4AEF731-C88E-4B03-BB71-00B97FE34BA6",
+                "question": "What is a Submodule?"
+            },
+            {
+                "id": "D62D389A-70F7-4B3C-879B-9BA42F83F4B8",
+                "question": "What is an Artifactory?"
+            }
         ]
     },
     {
-        "topic": "Design Pattern, Principles",
+        "topic": "Design Pattern & Principles",
+        "id": "23004552-8EE4-49D7-8B5F-EBEC3A61A45F",
         "questions": [
-            "What are the pros and cons of using Singleton?",
-            "What is your preferred way of using Singleton in the app? And writing test around it?",
-            "What is big-O notation?",
-            "What are the SOLID principles?",
-            "What is Redux framework?",
-            "What benefits does MVVM provide over MVC?"
+            {
+                "id": "4F14EC7E-07D1-4A2C-80FC-BBABB5166AED",
+                "question": "What are the pros and cons of using Singleton?"
+            },
+            {
+                "id": "C063E66C-CE2B-4100-B1A7-0792C762436C",
+                "question": "What is your preferred way of using Singleton in the app? And writing test around it?"
+            },
+            {
+                "id": "91D2EB48-DE38-4302-BEB0-56B3957B5F63",
+                "question": "What is big-O notation?"
+            },
+            {
+                "id": "42522954-BC55-4E87-B27C-1A14171E266B",
+                "question": "What are the SOLID principles?"
+            },
+            {
+                "id": "5962DAC0-BACF-4E2F-A8A0-678301E783F3",
+                "question": "What is Redux framework?"
+            },
+            {
+                "id": "66F901FD-4EF9-4854-B717-90FA35C1761A",
+                "question": "What benefits does MVVM provide over MVC?"
+            }
         ]
     },
     {
         "topic": "Swift",
+        "id": "FC3ED3E5-69CF-42AC-BF94-DC002DED1549",
         "questions": [
-            "What is the current version of Swift?",
-            "Do you follow Swift proposals?",
-            "What was the recent change you liked in Swift and why?",
-            "What is a guard statement?",
-            "What is a defer statement?",
-            "Can we have break/return/throw or any error inside defer statement?",
-            "Can we've multiple defer in one function? What is the order of execution FILO?"
+            {
+                "id": "E796532E-1D2D-437A-9281-9CA338F870D9",
+                "question": "What is the current version of Swift?"
+            },
+            {
+                "id": "8C042215-94F7-4248-96D7-663537A8672C",
+                "question": "Do you follow Swift proposals?"
+            },
+            {
+                "id": "F712622F-12E0-413E-B9CA-C10AADC31D4D",
+                "question": "What was the recent change you liked in Swift and why?"
+            }
         ]
     },
     {
         "topic": "Collection, Properties, Methods",
+        "id": "8FFEE03F-BF74-4D83-8FC2-0062966C1291",
         "questions": [
-            "What is property wrapper, how to create a custom property wrappers?",
-            "Can we have any type of key in Dictionary?",
-            "Can lazy property cause a memory leak if self is used while computing lazy property?",
-            "What is the difference between an Static vs a Class property?",
-            "Are static let properties lazy by definition?",
-            "When `@objc` and `@nonobjc` write before method and variable in swift?",
-            "What is the difference between map, compactMap, and flatMap functions?",
-            "What is the difference between filter and reduce functions?",
-            "What are a functor and monad?"
+            {
+                "id": "656D0256-659F-4388-893B-6B0A7F61B55E",
+                "question": "What is property wrapper, how to create a custom property wrappers?"
+            },
+            {
+                "id": "CAAD52DB-2F7F-4DF9-B597-A47CD3F58947",
+                "question": "Can we have any type of key in Dictionary?"
+            },
+            {
+                "id": "05ED935C-96AC-42A2-A7CA-F62825902E25",
+                "question": "Can lazy property cause a memory leak if self is used while computing lazy property?"
+            },
+            {
+                "id": "C5294EF3-9BE7-46AC-9019-F12A82A12D06",
+                "question": "What is the difference between a Static vs a Class property?"
+            },
+            {
+                "id": "849BEE3B-838D-49A3-B929-A050EA7F244B",
+                "question": "Are static let properties lazy by definition?"
+            },
+            {
+                "id": "4358F228-BAE3-4272-B50E-102D8B78A8A8",
+                "question": "When `@objc` and `@nonobjc` write before method and variable in swift?"
+            },
+            {
+                "id": "0D4CF1E1-786D-43AB-9409-3EADF553E91F",
+                "question": "What is the difference between map, compactMap, and flatMap functions?"
+            },
+            {
+                "id": "E452B622-F8C6-4FAB-97A4-E3D4FFD38F52",
+                "question": "What is the difference between filter and reduce functions?"
+            },
+            {
+                "id": "49266D97-251A-4892-9C74-BA7600DDA19B",
+                "question": "What are a functor and monad?"
+            },
+            {
+                "id": "49302F3B-2DF9-48E4-BAD4-55F58E9B8FB9",
+                "question": "What is a guard statement?"
+            },
+            {
+                "id": "1C05DC2B-02AE-41E0-AB29-288D9A3DBDF9",
+                "question": "What is a defer statement?"
+            },
+            {
+                "id": "61B17792-9739-4FC3-ADD8-5787DFEEC0CA",
+                "question": "Can we have break/return/throw or any error inside defer statement?"
+            },
+            {
+                "id": "F6C6D527-4544-4F77-9DF4-333737F0E5FC",
+                "question": "Can we've multiple defer in one function? What is the order of execution FILO?"
+            }
         ]
     },
     {
         "topic": "Threads and Memory",
+        "id": "DB5DB481-72E3-417B-878C-0463EF38D017",
         "questions": [
-            "What is Stack and Heap memory allocation?",
-            "What are the access levels of Swift?",
-            "Which access level is the default?",
-            "What is the difference between open vs public?",
-            "What is the difference between public vs internal/private vs internal?",
-            "What is the use of `fileprivate` in swift?",
-            "What is Copy On Write?",
-            "How ARC is implemented in Swift?",
-            "What is the difference between `[weak self]` and `[unowned self]`?",
-            "How do you create Singleton in Swift?",
-            "Is static let a Thread Safe property?",
-            "How do we create Singleton in Objective-C?",
-            "Is DispatchOnce thread-safe?",
-            "Is DispatchOnce synchronous or asynchronous?"
+            {
+                "id": "BD9586C3-C341-4C85-9CE7-1CDDD25DC229",
+                "question": "What is Stack and Heap memory allocation?"
+            },
+            {
+                "id": "B02DC1D1-368F-4FF9-8767-8430C7E52C23",
+                "question": "What are the access levels of Swift?"
+            },
+            {
+                "id": "91A4A9B2-C31C-4949-89D3-7B9C750F6C88",
+                "question": "Which access level is the default?"
+            },
+            {
+                "id": "173F516E-3ED6-40F0-AFF3-25B8DE067239",
+                "question": "What is the difference between open vs public?"
+            },
+            {
+                "id": "4D956C7C-1967-47E9-B1FF-2BEFDBEE6340",
+                "question": "What is the difference between public vs internal/private vs internal?"
+            },
+            {
+                "id": "08F7FB30-6775-4CB9-87E3-89B25E9BCBC9",
+                "question": "What is the use of `fileprivate` in swift?"
+            },
+            {
+                "id": "B84687DC-3B19-4C35-B262-3DBA4207BE63",
+                "question": "What is Copy On Write?"
+            },
+            {
+                "id": "90915ED5-EB41-4DE8-A677-06980AE037B2",
+                "question": "How ARC is implemented in Swift?"
+            },
+            {
+                "id": "BBEA1D07-F4C1-47F3-81B3-7AD96E487726",
+                "question": "What is the difference between `[weak self]` and `[unowned self]`?"
+            },
+            {
+                "id": "940035D4-AE4F-43C4-BC6B-C1A7988EE723",
+                "question": "How do you create Singleton in Swift?"
+            },
+            {
+                "id": "547B59EA-7589-4B79-BFEA-AB09E533ACF1",
+                "question": "Is static let a Thread Safe property?"
+            },
+            {
+                "id": "33F36912-438C-403F-90FF-8F92F4AC588C",
+                "question": "How do we create Singleton in Objective-C?"
+            },
+            {
+                "id": "81E25CD7-61BD-4BF2-86B9-2E20ACBF3B82",
+                "question": "Is DispatchOnce thread-safe?"
+            },
+            {
+                "id": "32ADB422-2E2C-44AA-8F89-CDD7BA5C887B",
+                "question": "Is DispatchOnce synchronous or asynchronous?"
+            }
         ]
     },
     {
         "topic": "Protocol, Class, Struct, Enum",
+        "id": "9265BAE6-241D-4A58-AFDF-F89CB991D4E9",
         "questions": [
-            "What is Hashable?",
-            "What is Synthesized Equatable and Hashable?",
-            "What is Conditional conformance?",
-            "What is TypeEraser in Swift?",
-            "What are AnySequence and use-case?",
-            "What is a Protocol composition?",
-            "What happens (behind the scene) when you create a protocol composition?",
-            "How do we define a set only property in the protocol?",
-            "How do we define a class property in a protocol?",
-            "Is it possible to have a Generic protocol?",
-            "What is an Associated Type in Protocol?",
-            "Could you explain Associatedtype?",
-            "What is an encapsulation?",
-            "What is the difference between == vs === operator?",
-            "Can an associated type have a default value?",
-            "What is the difference Any and AnyObject?",
-            "What is a Subscript?",
-            "What is the swift implementation of ImplicitlyUnwrappedOptionals and an Optional?",
-            "Is there any inheritance between ImplicitlyUnwrappedOptionals and an Optional?",
-            "`struct Zoo { var zoo: Zoo }` Can a struct contain instance of itself?",
-            "What are the types of initializers? init? / failable init, Convenience initializer vs designated initializers?",
-            "What is the different between `is` and `as`? for ex: FooType is/as SomeType",
-            "What are SequenceType, GeneratorType and CollectionType?",
-            "What is Opaque return type in swift?",
-            "What is frozen enum?"
+            {
+                "id": "EAF161C5-9DC3-408F-AAC7-59D59F4BED80",
+                "question": "What is Hashable?"
+            },
+            {
+                "id": "156632A4-4C6F-4FD9-9807-BC757A36D03E",
+                "question": "What is Synthesized Equatable and Hashable?"
+            },
+            {
+                "id": "E1313567-8ED6-4CCC-96FB-F64CB6F7E1CA",
+                "question": "What is Conditional conformance?"
+            },
+            {
+                "id": "F32BA010-B0F6-4ABE-8DC6-3B009906CAC3",
+                "question": "What is TypeEraser in Swift?"
+            },
+            {
+                "id": "2CCC8501-C973-41FD-B3AC-4412CBA8A252",
+                "question": "What are AnySequence and use-case?"
+            },
+            {
+                "id": "FF35AF4E-5414-44A4-8F15-8B28FB048874",
+                "question": "What is a Protocol composition?"
+            },
+            {
+                "id": "77B194B9-173D-4D48-8218-24958C3292A4",
+                "question": "What happens (behind the scene) when you create a protocol composition?"
+            },
+            {
+                "id": "F35B51A0-B8A7-474F-B303-D4D885F29B07",
+                "question": "How do we define a set only property in the protocol?"
+            },
+            {
+                "id": "CEAEE431-6A62-4FD6-B1F7-D67E04BA0775",
+                "question": "How do we define a class property in a protocol?"
+            },
+            {
+                "id": "1DDF0E2E-435C-426B-AE08-F9A16E33A9D5",
+                "question": "Is it possible to have a Generic protocol?"
+            },
+            {
+                "id": "E31DE6F4-36A5-499F-AEC0-322B7DA7BC46",
+                "question": "What is an Associated Type in Protocol?"
+            },
+            {
+                "id": "A9442B12-4994-42E1-BC71-AC56C8D1A638",
+                "question": "Could you explain associatedtype?"
+            },
+            {
+                "id": "C4D0E4CB-1E8B-4C3B-B397-AD785A8A68D8",
+                "question": "What is an encapsulation?"
+            },
+            {
+                "id": "81D56D52-3EE5-40CF-B937-A4F2A81173F8",
+                "question": "What is the difference between == vs === operator?"
+            },
+            {
+                "id": "043578BF-D514-497D-8ACF-1BA118FCB5F5",
+                "question": "Can an associated type have a default value?"
+            },
+            {
+                "id": "BF7511DE-4B6D-4C68-957D-A013554E4526",
+                "question": "What is the difference Any and AnyObject?"
+            },
+            {
+                "id": "56BACA77-9A4D-48F9-A712-5A0D30AF807D",
+                "question": "What is a Subscript?"
+            },
+            {
+                "id": "20ADE408-0565-412B-96E2-AD8E10C39A30",
+                "question": "What is the swift implementation of ImplicitlyUnwrappedOptionals and an Optional?"
+            },
+            {
+                "id": "CBA25BFA-A83C-411F-92C4-23B6C07F8ED0",
+                "question": "Is there any inheritance between ImplicitlyUnwrappedOptionals and an Optional?"
+            },
+            {
+                "id": "FBBC805E-D45C-4D69-B9C4-8D1B17C443C6",
+                "question": "`struct Zoo { var zoo: Zoo }` Can a struct contain instance of itself?"
+            },
+            {
+                "id": "0BD77BA3-91BA-4068-96AA-46B8FA69FC0F",
+                "question": "What are the types of initializers? init? / failable init, Convenience initializer vs designated initializers?"
+            },
+            {
+                "id": "DDC4400A-5ECA-4FC1-B94B-9C5BA847DE76",
+                "question": "What is the different between `is` and `as`? for ex: FooType is/as SomeType"
+            },
+            {
+                "id": "38E202FF-613F-46F4-AFEA-BB1488EC257A",
+                "question": "What are SequenceType, GeneratorType and CollectionType?"
+            },
+            {
+                "id": "A33C4CDA-309D-4DF2-9574-4D788606698B",
+                "question": "What is Opaque return type in swift?"
+            },
+            {
+                "id": "4917BB47-813C-4FA4-90DE-2CCF62396303",
+                "question": "What is frozen enum?"
+            }
         ]
     },
     {
         "topic": "Foundation",
+        "id": "5363DA81-4716-4344-A4FF-CEC5C82FEFDC",
         "questions": [
-            "How would you parse custom date formatter with Codable?",
-            "What is `dateDecodingStrategy`?",
-            "How would you encode/decode an Enum with associated types?",
-            "How would you handle empty response parsing?",
-            "How would you handle two API responses in a single model?",
-            "What is the difference NSOperation vs GCD?",
-            "What is DispatchGroup?",
-            "What is the difference between Concurrency vs Parallelism?",
-            "What is the difference Multitasking vs MultiThreading?",
-            "What does Dispatch Barrier do?",
-            "What are the ways to make code thread-safe?",
-            "What does @synchronized keyword do?",
-            "What does @synthesized keyword do?",
-            "What is URLCache?",
-            "What is URLComponents?",
-            "What is the difference between Stack and Heap?",
-            "What is the difference between a Thread, a Process, and a Task?"
+            {
+                "id": "A1FF65AE-7A17-44BB-B9B3-98D27FC97EA5",
+                "question": "How would you parse custom date formatter with Codable?"
+            },
+            {
+                "id": "9E6A3965-18EA-4872-91FE-FBAF44AAD11B",
+                "question": "What is `dateDecodingStrategy`?"
+            },
+            {
+                "id": "9CE283E0-168C-4F58-9FCA-2B6B399C0C38",
+                "question": "How would you encode/decode an Enum with associated types?"
+            },
+            {
+                "id": "56E05839-F91A-49A9-8626-4C9B113512E7",
+                "question": "How would you handle empty response parsing?"
+            },
+            {
+                "id": "3B0C59A1-C930-40D8-8AE0-D1B6E56C5299",
+                "question": "How would you handle two API responses in a single model?"
+            },
+            {
+                "id": "87EE6C4B-EAAD-4B5B-9624-AA1E976C9121",
+                "question": "What is the difference NSOperation vs GCD?"
+            },
+            {
+                "id": "2B9C7808-9000-41D4-8236-37C43E55B3E1",
+                "question": "What is DispatchGroup?"
+            },
+            {
+                "id": "E09FDF93-E88F-4921-9D4A-DD57BD9E65F7",
+                "question": "What is the difference between Concurrency vs Parallelism?"
+            },
+            {
+                "id": "B317819B-9A55-4700-B770-B7B90CAC8A8D",
+                "question": "What is the difference Multitasking vs MultiThreading?"
+            },
+            {
+                "id": "F611832E-A1FC-466D-ABF3-8140A4AF8CED",
+                "question": "What does Dispatch Barrier do?"
+            },
+            {
+                "id": "DC575C60-96FB-4496-B44A-A7C54674CCD0",
+                "question": "What are the ways to make code thread-safe?"
+            },
+            {
+                "id": "89FDFB0C-9CD5-45D0-89F9-F3ECE0462958",
+                "question": "What does @synchronized keyword do?"
+            },
+            {
+                "id": "192EEF74-7431-47AA-B0DC-8BD6C9BC9090",
+                "question": "What does @synthesized keyword do?"
+            },
+            {
+                "id": "9C47FC38-A8CA-4E94-B0B9-03ACC05253C7",
+                "question": "What is URLCache?"
+            },
+            {
+                "id": "452EB742-3820-49A8-A27D-95C010C58912",
+                "question": "What is URLComponents?"
+            },
+            {
+                "id": "7B14D7C4-F155-4100-93E6-0B7F2E58DA08",
+                "question": "What is the difference between Stack and Heap?"
+            },
+            {
+                "id": "4316BA90-A8A1-4876-B721-756537A8BD76",
+                "question": "What is the difference between a Thread, a Process, and a Task?"
+            }
         ]
     },
     {
         "topic": "UIKit",
+        "id": "9B5F0328-2B8D-4AEE-907F-F2C445BBD07A",
         "questions": [
-            "Can you write hitTest for a window or a view?",
-            "What is the UIWindow hierarchy?",
-            "What is anchor points of a view?",
-            "What is a view’s offset, what value does it hold?",
-            "What is an update cycle of a UIView?",
-            "run loop runs every 16 milliseconds, it gives 60 frame per seconds, which runs the update cycle?",
-            "What is the best place in UIViewController instance to set up custom views and layouts?",
-            "What is `loadView()`?",
-            "What is the view controller life cycle?",
-            "How does load view affect view controller lifecycle",
-            "How would you implement cell reusability?",
-            "Hierarchy of UIView/UIButton classes?",
-            "What is the superclass of a UIWindow?",
-            "Why IBOutlets are weak?",
-            "What will happen if we make IBOutlets strong? Would there any retain cycle?",
-            "What is the intrinsic content size?",
-            "What are the UI elements supports intrinsic content size feature?",
-            "What are contentHuggingPriority and contentCompressionResistancePriority?",
-            "What are the layout anchors?",
-            "What is the difference between `setNeedsLayout v layout if needed`?",
-            "What is the difference between setNeedsLayout vs setNeedsDisplay?",
-            "What is a UILayoutGuide?",
-            "Are layout guide part of responder chain?",
-            "Can you tell me about the hierarchy does layout guide response to events or UIResponse?"
+            {
+                "id": "D9B3933C-E726-4BBF-B946-C819C1C420C9",
+                "question": "Can you write hitTest for a window or a view?"
+            },
+            {
+                "id": "2404193B-3603-491A-9629-B6DD29BCFD49",
+                "question": "What is the UIWindow hierarchy?"
+            },
+            {
+                "id": "8720873D-F4C9-4DB5-8889-1A001C79F938",
+                "question": "What is anchor points of a view?"
+            },
+            {
+                "id": "3456AE52-A149-4389-AA7F-AA8942CFD2B5",
+                "question": "What is a view’s offset, what value does it hold?"
+            },
+            {
+                "id": "04366050-7F53-4F71-8B92-B46238D3B7E3",
+                "question": "What is an update cycle of a UIView?"
+            },
+            {
+                "id": "2C936B1D-17B8-4875-BD22-8AB0CB67C977",
+                "question": "run loop runs every 16 milliseconds, it gives 60 frame per seconds, which runs the update cycle"
+            },
+            {
+                "id": "34CEF766-C1F3-44BC-95A2-1FEED8FE599B",
+                "question": "What is the best place in UIViewController instance to set up custom views and layouts?"
+            },
+            {
+                "id": "0D6B3FEE-D77F-4124-A42F-7701341AEDB7",
+                "question": "What is `loadView()`?"
+            },
+            {
+                "id": "AFBAAEFB-4339-48BC-8883-6FFE2E81F0CA",
+                "question": "What is the view controller life cycle?"
+            },
+            {
+                "id": "4784148D-F006-45E4-BE28-C987BDF5A6E0",
+                "question": "How does load view affect view controller lifecycle"
+            },
+            {
+                "id": "B61B688F-B131-4009-82FF-1558D67C43EC",
+                "question": "How would you implement cell reusability?"
+            },
+            {
+                "id": "F2CBFD10-5E53-4305-BB48-085109DA0925",
+                "question": "Hierarchy of UIView/UIButton classes?"
+            },
+            {
+                "id": "59F8A96E-5C36-4065-9694-100B7505C522",
+                "question": "What is the superclass of a UIWindow?"
+            },
+            {
+                "id": "98892541-4470-421D-91AF-271192A36DF7",
+                "question": "Why IBOutlets are weak?"
+            },
+            {
+                "id": "32BD41DE-B671-41D5-9095-939E681AC03F",
+                "question": "What will happen if we make IBOutlets strong? Would there any retain cycle?"
+            },
+            {
+                "id": "C0B386FD-684D-4DA6-BBEE-3E1EF424D5FA",
+                "question": "What is the intrinsic content size?"
+            },
+            {
+                "id": "8AC9B099-6060-442A-BCAA-D57406297387",
+                "question": "What are the UI elements supports intrinsic content size feature?"
+            },
+            {
+                "id": "D115144A-04B5-46D0-9B66-647D0E39E9AB",
+                "question": "What are contentHuggingPriority and contentCompressionResistancePriority?"
+            },
+            {
+                "id": "9BA1A6B6-B990-47F4-8AB1-F56767CF51AE",
+                "question": "What are the layout anchors?"
+            },
+            {
+                "id": "0457D2D3-5AE8-4509-8508-842157AD8613",
+                "question": "What is the difference between `setNeedsLayout v layout if needed`?"
+            },
+            {
+                "id": "DB1B1B7B-A7E9-4DB1-94AA-EA40E1C05ED6",
+                "question": "What is the difference between setNeedsLayout vs setNeedsDisplay?"
+            },
+            {
+                "id": "59CB4BE7-E452-46B1-B088-669CCCCFA684",
+                "question": "What is a UILayoutGuide?"
+            },
+            {
+                "id": "137112DA-57EC-42E3-9B06-A4BD1AB5E3AB",
+                "question": "Are layout guide part of responder chain?"
+            },
+            {
+                "id": "09088BC1-56C3-4FEA-ABBB-BA7930251938",
+                "question": "Can you tell me about the hierarchy does layout guide response to events or UIResponse?"
+            }
         ]
     },
     {
         "topic": "Reactive Programming",
+        "id": "4C4DF575-AE0A-4474-BE57-30FEF18DA4D4",
         "questions": [
-            "What are Subjects?",
-            "What is the difference between flatMap and flatMapLatest?",
-            "What is switchLatest?",
-            "What are RxSwift traits",
-            "What is RxCocoa Traits?",
-            "What is Subscription in Combine?",
-            "How to create customer Subscriber or Publisher in Combine?"
+            {
+                "id": "D88E70B8-39E9-43B1-8CBE-E4986616B92A",
+                "question": "What are Subjects?"
+            },
+            {
+                "id": "9DAE4FFA-4E6A-4105-B2A9-3C814D804D5B",
+                "question": "What is the difference between flatMap and flatMapLatest?"
+            },
+            {
+                "id": "C33E873C-F148-4083-AD9E-64C29B542142",
+                "question": "What is switchLatest?"
+            },
+            {
+                "id": "F497C211-1950-468B-9490-F1DEDD157C61",
+                "question": "What are RxSwift traits"
+            },
+            {
+                "id": "B75D1EE2-6500-4CF6-B85C-40C59ADA3049",
+                "question": "What is RxCocoa Traits?"
+            },
+            {
+                "id": "55766655-2B1D-4566-BEAC-8DD94EF09844",
+                "question": "What is Subscription in Combine?"
+            },
+            {
+                "id": "8A187B64-0B3F-431C-8B5B-DFED86416B53",
+                "question": "How to create customer Subscriber or Publisher in Combine?"
+            }
         ]
     },
     {
         "topic": "Testing",
+        "id": "48CBBE6A-296B-4BB7-B61F-7FD34C266F2B",
         "questions": [
-            "What is a TestPlan in Xcode?",
-            "What are Quick and Nimble frameworks?",
-            "Would you prefer using Quick/Nimble over XCTest? or why?",
-            "How would you test universal links in the app?",
-            "How would you test deep-linking to the app?",
-            "What are the types of testing methods you have used?",
-            "What is Black box testing?",
-            "What is Feature testing?",
-            "What is the Smoke test?",
-            "What is the Staging test?",
-            "What is the Release test?",
-            "What is Automation suit?",
-            "What is Regression test?",
-            "What is the difference between BDT vs TDD?",
-            "How does BDT work in iOS apps?",
-            "Do you know anything about the APM (Application Monitoring) tool?",
-            "How does integration testing work?",
-            "What feature does TestFlight provides?",
-            "What are the difference between Fastlane and a CI tool?",
-            "Can we use Bitrise and Fastlane together?",
-            "What is CI and CD? Which tools have you worked with Bitrise, Travis CI, Circle CI, Jenkins, GitHub Actions, etc.",
-            "How would you test an app if the backend is not responding?",
-            "What are test doubles, what is the difference between Dummy and Mock?",
-            "How would you replicate bad behavior from a backend?"
+            {
+                "id": "CD13A016-3FC8-47A6-A078-9BCEDAEFA95B",
+                "question": "What is a TestPlan in Xcode?"
+            },
+            {
+                "id": "F8150B05-8D7E-47A2-A2F2-3D74DFF74F49",
+                "question": "What are Quick and Nimble frameworks?"
+            },
+            {
+                "id": "1002FF92-16E1-4FBC-8E17-736DA6074960",
+                "question": "Would you prefer using Quick/Nimble over XCTest? or why?"
+            },
+            {
+                "id": "22B58DEC-9079-4E0A-8641-68C8B39D4274",
+                "question": "How would you test universal links in the app?"
+            },
+            {
+                "id": "8EC73311-D14C-4329-B685-ABB314C7A67B",
+                "question": "How would you test deep-linking to the app?"
+            },
+            {
+                "id": "D0A49F8E-180B-4BC6-B418-3419DB2C6B08",
+                "question": "What are the types of testing methods you have used?"
+            },
+            {
+                "id": "9D282EB6-94B1-4207-9E2B-CD135ACAA63D",
+                "question": "What is Black box testing?"
+            },
+            {
+                "id": "D42DE490-3412-4C44-ABE3-271917495B1D",
+                "question": "What is Feature testing?"
+            },
+            {
+                "id": "5A89027C-3EEC-497B-BE82-4518AF583436",
+                "question": "What is the Smoke test?"
+            },
+            {
+                "id": "1B5CAB57-0ED6-420E-BD60-CD9504823480",
+                "question": "What is the Staging test?"
+            },
+            {
+                "id": "64C555D4-3884-4A27-8FE1-98346C671DA0",
+                "question": "What is the Release test?"
+            },
+            {
+                "id": "789AB3D8-251C-4869-AE78-5CE65A89843B",
+                "question": "What is Automation suit?"
+            },
+            {
+                "id": "C03DE7A9-2187-4DF8-B29C-2CC9A97E6ED3",
+                "question": "What is Regression test?"
+            },
+            {
+                "id": "6EC3EEDD-A345-4B29-8968-F8D604D69C08",
+                "question": "What is the difference between BDT vs TDD?"
+            },
+            {
+                "id": "3B307BE2-F0DD-4C1A-91B6-1D70A11C2501",
+                "question": "How does BDT work in iOS apps?"
+            },
+            {
+                "id": "AEE73649-6768-4863-A6A7-28259974F2AF",
+                "question": "Do you know anything about the APM (Application Monitoring) tool?"
+            },
+            {
+                "id": "44765669-EFEF-4908-AE02-31B1253C77B7",
+                "question": "How does integration testing work?"
+            },
+            {
+                "id": "A7CC6F09-A8CF-4F76-B29F-94833DE96FE4",
+                "question": "What feature does TestFlight provides?"
+            },
+            {
+                "id": "E6C2DAC9-D24B-4ABB-AC04-683B96BA27B1",
+                "question": "What are the difference between Fastlane and a CI tool?"
+            },
+            {
+                "id": "28081E46-E08E-468F-B73B-7E27B4716022",
+                "question": "Can we use Bitrise and Fastlane together?"
+            },
+            {
+                "id": "7E5E7354-74C2-4731-AEAA-442AF7FE4135",
+                "question": "What is CI and CD? Which tools have you worked with Bitrise, Travis CI, Circle CI, Jenkins, GitHub Actions, etc."
+            },
+            {
+                "id": "8D35D702-02C6-4CBD-9B0F-CB5724666070",
+                "question": "How would you test an app if the backend is not responding?"
+            },
+            {
+                "id": "AD5C5155-2B72-4A43-86F1-B6EFFC00F5E3",
+                "question": "What are test doubles, what is the difference between Dummy and Mock?"
+            },
+            {
+                "id": "08A84BB7-B62D-4344-B55C-C1060C061460",
+                "question": "How would you replicate bad behavior from a backend?"
+            }
         ]
     },
     {
         "topic": "Server Side Swift",
+        "id": "289DA425-B849-492C-BC28-DCAAFB23AB2B",
         "questions": [
-            "What is bearer authentication?",
-            "What is JWT authentication?",
-            "Difference Fluent ORM: MySQL, PostgreSQL, and SQLite"
+            {
+                "id": "A9F46A32-0E55-4D2C-94F0-6430E5777B77",
+                "question": "What is bearer authentication?"
+            },
+            {
+                "id": "5FCB4C37-3F29-425D-A671-0890B6359544",
+                "question": "What is JWT authentication?"
+            },
+            {
+                "id": "B2572D58-299A-4AD8-BDB0-B9A67BBD6F6C",
+                "question": "Difference Fluent ORM: MySQL, PostgreSQL, and SQLite"
+            }
         ]
     },
     {
         "topic": "Kotlin Multiplatform",
+        "id": "AAF4C8DE-BA58-4BE8-B0F0-815C31800756",
         "questions": [
-            "What is gradle?",
-            "Do you anything about Kotlin Multi-Platform?",
-            "What is Maven?"
+            {
+                "id": "9EAC05A5-D64A-48D5-A024-0E3653A235A5",
+                "question": "What is gradle?"
+            },
+            {
+                "id": "72749230-008F-4B98-93BF-DD674C107614",
+                "question": "Do you anything about Kotlin Multi-Platform?"
+            },
+            {
+                "id": "10023ACC-9F01-4E39-8635-C86FF6A36ADD",
+                "question": "What is Maven?"
+            }
         ]
     }
 ]

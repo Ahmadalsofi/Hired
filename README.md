@@ -22,6 +22,6 @@ Below are few some of the screenshots of the application.
 </p>
 
 This repository is a question bank from where Hired app gets all its content. You can contribute to the question bank by raising a Pull Request.
-Content is located in Resources folder `Hired/Sources/Hired/Resources/iOS_ID.json`.
+Content is located in Resources folder `Hired/Sources/Hired/Resources/iOS.json`.
 
-Currently, This repository dees not have code for the actual application.
+Currently, This repository does not have code for the actual application.
