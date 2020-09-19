@@ -8,7 +8,7 @@ It has following features:
 - Take an interview from your own questions list.
 - A checklist for reviewing iOS assignments (WIP).
 
-Below are few some of the screenshots of the application.
+Below are some of the screenshots of the application.
 
 <p align="center">
     <img src="readmeAssets/1.PNG" width="200"/>
