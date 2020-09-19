@@ -1,11 +1,10 @@
 # Hired
 
-Hired is an iOS, iPadOS and soon to be on macOS application to take interviews.
-It has following features:
+Hired is an iOS, iPadOS and soon to be on macOS application to take interviews. It has the following features:
 
-- Browse all question under different topics.
+- Browse all questions under different topics.
 - Create your own list of selected questions.
-- Take an interview from your own questions list.
+- Take an interview from the list of your own questions.
 - A checklist for reviewing iOS assignments (WIP).
 
 Below are some of the screenshots of the application.
